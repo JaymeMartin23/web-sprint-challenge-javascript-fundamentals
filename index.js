@@ -16,7 +16,7 @@ function myFunction() {
 //myFunction();
 
 //🚀🚀🚀 ⬇️ 📝 Explanation ⬇️ 📝 🚀🚀🚀: 
-
+//Functions inside myFunction can access anything inside the function but functions outside the function can not "reach in" to access items inside.
 
 
 
@@ -30,10 +30,16 @@ function myFunction() {
 💡 NOTE: you may use a for loop for this function if you wish 
 */
 
-function summation(/*Your Code Here*/) {
-  /*Your Code Here*/
+function summation() {
+ let count = 0;
 
-  }
+function increment() {
+  count += 1;
+}
+return increment;
+}
+console.log(summation(4))
+
  
 
 // 🦁🦁🦁 Topic 2: ADVANCED Array Methods 🦁🦁🦁
@@ -60,8 +66,11 @@ const zooAnimals = [
   💡 NOTE: the array returned should be an array of strings, and each string should follow this pattern: "name: {name}, scientific: {scientific name}"
   */
 
-  function animalNames(/*Your Code Here*/){
-    /*Your Code Here*/
+  function animalNames(element){
+    const zooAnimals
+    array.forEach(function(animal_name, scientific_name){
+
+    });
   }
   
 
@@ -74,9 +83,10 @@ const zooAnimals = [
   🌟 EXAMPLE of returned array: ['jackal, asiatic', .....]
   💡 NOTE: Do some research for other methods that can help help you
   */
+ // lowerCaseNames = lowerCaseNames.toLowerCase();
 
-  function lowerCaseNames(/*Your Code Here*/){
-    /*Your Code Here*/
+  function lowerCaseNames(element){
+   
   }
   
   
@@ -88,10 +98,13 @@ const zooAnimals = [
   3. Return this new array
   */
 
-  function lowPopulationAnimals(/*Your Code Here*/){
-    /*Your Code Here*/
+  function lowPopulationAnimals(data){
+    const zooAnimals = data.filter(function(item){
+      return item.Population < 4;
+    })
+    return lowPopulationAnimals;
   }
-  
+  console.log(lowPopulationAnimals(zooAnimals));
 
   /* 🦁🦁🦁 Request 4: .reduce() 🦁🦁🦁
   The zoo needs to know their total animal population across the United States. 
