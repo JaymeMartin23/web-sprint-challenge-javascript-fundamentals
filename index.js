@@ -38,7 +38,7 @@ function increment() {
 }
 return increment;
 }
-console.log(summation(4))
+console.log(summation())
 
  
 
@@ -66,10 +66,9 @@ const zooAnimals = [
   💡 NOTE: the array returned should be an array of strings, and each string should follow this pattern: "name: {name}, scientific: {scientific name}"
   */
 
-  function animalNames(element){
-    const zooAnimals
-    array.forEach(function(animal_name, scientific_name){
-
+  function animalNames(animals){
+    zooAnimals.forEach(function(animal_name, scientific_name){
+      
     });
   }
   
@@ -85,8 +84,11 @@ const zooAnimals = [
   */
  // lowerCaseNames = lowerCaseNames.toLowerCase();
 
-  function lowerCaseNames(element){
-   
+  function lowerCaseNames(animals){
+    const newAnimalNames = zooAnimals.map(function(animal_name){
+      return animal_name.toLowerCase
+    })
+  
   }
   
   
@@ -99,12 +101,12 @@ const zooAnimals = [
   */
 
   function lowPopulationAnimals(data){
-    const zooAnimals = data.filter(function(item){
-      return item.Population < 4;
+    const lowPopulationAnimals = zooAnimals.filter(function(item){
+      return item.population === 5;
     })
     return lowPopulationAnimals;
   }
-  console.log(lowPopulationAnimals(zooAnimals));
+  console.log(lowPopulationAnimals);
 
   /* 🦁🦁🦁 Request 4: .reduce() 🦁🦁🦁
   The zoo needs to know their total animal population across the United States. 
