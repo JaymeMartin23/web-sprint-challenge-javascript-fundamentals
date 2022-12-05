@@ -78,7 +78,7 @@ const zooAnimals = [
   function animalNames(animals, name)
     const displayNames = [];
     array.forEach(function(zooAnimals){
-      newArray.push("animal_name, scienticif_name")
+      newArray.push("animal_name, scientific_name")
     });
   
 
