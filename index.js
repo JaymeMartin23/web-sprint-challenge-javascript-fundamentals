@@ -75,9 +75,11 @@ const zooAnimals = [
   
   // new Set(['foo', 'bar', undefined]).forEach(logSetElements);
 
-  function animalNames(animals){
-   
-  }
+  function animalNames(animals, name)
+    const displayNames = [];
+    array.forEach(function(zooAnimals){
+      newArray.push("animal_name, scienticif_name")
+    });
   
 
   /* 🦁🦁🦁 Request 2: .map() 🦁🦁🦁
@@ -90,12 +92,7 @@ const zooAnimals = [
   💡 NOTE: Do some research for other methods that can help help you
   */
  // lowerCaseNames = lowerCaseNames.toLowerCase();
-//  function logSetElements(value1, value2, set) {
-//   console.log(`s[${value1}] = ${value2}`);
-// }
-
-// new Set(['foo', 'bar', undefined]).forEach(logSetElements);
-
+// const map1 = array1.map();
 
   function lowerCaseNames(animals){
     const newAnimalNames = zooAnimals.map(function(animal_name){
@@ -133,7 +130,17 @@ const zooAnimals = [
   2. Use the .reduce() method to find the total population from the zoosAnimals array
   3. Return the total population
   💡 NOTE: Remember the reduce method takes two arguments: a callback (which itself takes two args - the accumulator and the item), and an initial value for the count. Check MDN/W3Schools for syntax!
-  */
+
+//const array1 = [1, 2, 3, 4];
+
+// 0 + 1 + 2 + 3 + 4
+// const initialValue = 0;
+// const sumWithInitial = array1.reduce(
+//   (accumulator, currentValue) => accumulator + currentValue,
+//   initialValue
+// );
+// console.log(sumWithInitial);
+// // expected output: 10
 
   function USApop(/*Your Code Here*/){
     /*Your Code Here*/
