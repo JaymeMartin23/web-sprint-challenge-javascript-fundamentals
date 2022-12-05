@@ -30,15 +30,19 @@ function myFunction() {
 💡 NOTE: you may use a for loop for this function if you wish 
 */
 
-function summation() {
- let count = 0;
+function summation(number) {
+  let count = 0;
+  for (let i = 0; i <= number; i++){
+    count = count + i
+  }
 
-function increment() {
-  count += 1;
+ return count
 }
-return increment;
-}
-console.log(summation())
+
+console.log(summation(0))
+console.log(summation(1))
+console.log(summation(6))
+console.log(summation(4))
 
  
 
@@ -65,11 +69,14 @@ const zooAnimals = [
     3. Return the new array
   💡 NOTE: the array returned should be an array of strings, and each string should follow this pattern: "name: {name}, scientific: {scientific name}"
   */
+  // function logSetElements(value1, value2, set) {
+  //   console.log(`s[${value1}] = ${value2}`);
+  // }
+  
+  // new Set(['foo', 'bar', undefined]).forEach(logSetElements);
 
   function animalNames(animals){
-    zooAnimals.forEach(function(animal_name, scientific_name){
-      
-    });
+   
   }
   
 
@@ -83,6 +90,12 @@ const zooAnimals = [
   💡 NOTE: Do some research for other methods that can help help you
   */
  // lowerCaseNames = lowerCaseNames.toLowerCase();
+//  function logSetElements(value1, value2, set) {
+//   console.log(`s[${value1}] = ${value2}`);
+// }
+
+// new Set(['foo', 'bar', undefined]).forEach(logSetElements);
+
 
   function lowerCaseNames(animals){
     const newAnimalNames = zooAnimals.map(function(animal_name){
@@ -99,6 +112,11 @@ const zooAnimals = [
   2. Use .filter() to create a new array of objects which contains only the animals with a population of less than 5
   3. Return this new array
   */
+  // const words = ['spray', 'limit', 'elite', 'exuberant', 'destruction', 'present'];
+
+  // const result = words.filter(word => word.length > 6);
+  
+  // console.log(result);
 
   function lowPopulationAnimals(data){
     const lowPopulationAnimals = zooAnimals.filter(function(item){
