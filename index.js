@@ -75,15 +75,18 @@ const zooAnimals = [
   
   // new Set(['foo', 'bar', undefined]).forEach(logSetElements);
 
-  function animalNames(animals){
+function animalNames(animals){
+  const displayNames = []
 
-    const displayNames = []
-
-    animals.forEach(element => displayNames.push(element.animal_name, element.scientific_name));
-    
-    return displayNames
-    }
-    console.log(animalNames(zooAnimals))
+  animals.forEach(element => {
+    const displayName = `name: ${element.animal_name}, scientific: ${element.scientific_name}`
+    console.log('displayName is', displayName)
+    displayNames.push(displayName)
+  });
+  
+  return displayNames
+}
+console.log(animalNames(zooAnimals))
   
 
   /* 🦁🦁🦁 Request 2: .map() 🦁🦁🦁
@@ -98,12 +101,12 @@ const zooAnimals = [
  // lowerCaseNames = lowerCaseNames.toLowerCase();
 // const map1 = array1.map();
 
-  function lowerCaseNames(animals){
-  //   const newAnimalNames = zooAnimals.map((animal_name){
-  //     return animal_name.toLowerCase
-  //   })
-  
-   }
+function lowerCaseNames(animals){
+  const newAnimalNames = zooAnimals.map((animal) => {
+    return animal.animal_name.toLowerCase()
+ })
+  return newAnimalNames
+}
   
   
   /* 🦁🦁🦁 Request 3: .filter() 🦁🦁🦁
@@ -120,6 +123,7 @@ const zooAnimals = [
   // console.log(result);
 
   function lowPopulationAnimals(population){
+    //const newAnimalArray = population.filter(population > 5);
   }
    console.log(lowPopulationAnimals);
 
@@ -130,6 +134,18 @@ const zooAnimals = [
   // 2. Use the .reduce() method to find the total population from the zoosAnimals array
   // 3. Return the total population
   // 💡 NOTE: Remember the reduce method takes two arguments: a callback (which itself takes two args - the accumulator and the item), and an initial value for the count. Check MDN/W3Schools for syntax!
+
+//   const array1 = [1, 2, 3, 4];
+
+// // 0 + 1 + 2 + 3 + 4
+// const initialValue = 0;
+// const sumWithInitial = array1.reduce(
+//   (accumulator, currentValue) => accumulator + currentValue,
+//   initialValue
+// );
+
+// console.log(sumWithInitial);
+
 
   function USApop(element){
     // const reducedArr = zooAnimals.reduce((accumulator, currentValue)
