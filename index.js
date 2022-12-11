@@ -98,8 +98,6 @@ console.log(animalNames(zooAnimals))
   🌟 EXAMPLE of returned array: ['jackal, asiatic', .....]
   💡 NOTE: Do some research for other methods that can help help you
   */
- // lowerCaseNames = lowerCaseNames.toLowerCase();
-// const map1 = array1.map();
 
 function lowerCaseNames(animals){
   const newAnimalNames = zooAnimals.map((animal) => {
@@ -116,16 +114,16 @@ function lowerCaseNames(animals){
   2. Use .filter() to create a new array of objects which contains only the animals with a population of less than 5
   3. Return this new array
   */
-  // const words = ['spray', 'limit', 'elite', 'exuberant', 'destruction', 'present'];
-
-  // const result = words.filter(word => word.length > 6);
+ 
+  const lowPopulationAnimals = (zooAnimals) => {
+    // Use the filter() method to create a new array
+    // containing only the animals with a population of less than 5
+    const lowPopulation = zooAnimals.filter((animal) => animal.population < 5);
   
-  // console.log(result);
-
-  function lowPopulationAnimals(population){
-    //const newAnimalArray = population.filter(population > 5);
-  }
-   console.log(lowPopulationAnimals);
+    // Return the new array
+    return lowPopulation;
+  };
+ 
 
   // 🦁🦁🦁 Request 4: .reduce() 🦁🦁🦁
   // The zoo needs to know their total animal population across the United States. 
@@ -135,22 +133,13 @@ function lowerCaseNames(animals){
   // 3. Return the total population
   // 💡 NOTE: Remember the reduce method takes two arguments: a callback (which itself takes two args - the accumulator and the item), and an initial value for the count. Check MDN/W3Schools for syntax!
 
-//   const array1 = [1, 2, 3, 4];
-
-// // 0 + 1 + 2 + 3 + 4
-// const initialValue = 0;
-// const sumWithInitial = array1.reduce(
-//   (accumulator, currentValue) => accumulator + currentValue,
-//   initialValue
-// );
-
-// console.log(sumWithInitial);
-
-
-  function USApop(element){
-    // const reducedArr = zooAnimals.reduce((accumulator, currentValue)
-    // => {return accumulator + currentValue.population;}
-      }
+  const USApop = (zooAnimals) => {
+    // Use the reduce() method to find the total population of the animals
+    const totalPopulation = zooAnimals.reduce((total, animal) => total + animal.population, 0);
+  
+    // Return the total population
+    return totalPopulation;
+  };
   
   
   // 🦁🦁🦁 Callbacks 🦁🦁🦁  
