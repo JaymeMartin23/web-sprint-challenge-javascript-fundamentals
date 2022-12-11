@@ -103,7 +103,7 @@ function lowerCaseNames(animals){
   const newAnimalNames = zooAnimals.map((animal) => {
     return animal.animal_name.toLowerCase()
  })
-  return newAnimalNames
+    return newAnimalNames
 }
   
   
@@ -116,12 +116,10 @@ function lowerCaseNames(animals){
   */
  
   const lowPopulationAnimals = (zooAnimals) => {
-    // Use the filter() method to create a new array
-    // containing only the animals with a population of less than 5
+  
     const lowPopulation = zooAnimals.filter((animal) => animal.population < 5);
   
-    // Return the new array
-    return lowPopulation;
+  return lowPopulation;
   };
  
 
@@ -134,11 +132,10 @@ function lowerCaseNames(animals){
   // 💡 NOTE: Remember the reduce method takes two arguments: a callback (which itself takes two args - the accumulator and the item), and an initial value for the count. Check MDN/W3Schools for syntax!
 
   const USApop = (zooAnimals) => {
-    // Use the reduce() method to find the total population of the animals
+  
     const totalPopulation = zooAnimals.reduce((total, animal) => total + animal.population, 0);
   
-    // Return the total population
-    return totalPopulation;
+  return totalPopulation;
   };
   
   
@@ -150,10 +147,20 @@ function lowerCaseNames(animals){
     
     💡 NOTE: The tests for 'consume' will pass if it is created correctly and also after you correctly complete the functions 'add' and 'greeting' below in Step 2.
   */
+const consume = (a, b, cb) => {
+     
+        return cb(a, b);
+    };
 
-  function consume(/*Your Code Here */){
-    /*Your Code Here */
-  }
+    const add = (a, b) => a + b;
+    const greeting = (name) => `Hello, ${name}!`;
+
+    const result1 = consume(2, 3, add);
+    const result2 = consume("Alice", greeting);
+
+console.log(result1); 
+console.log(result2); 
+
  
   
   // 🦁🦁🦁 Step 2: Create several functions to callback with consume(); 🦁🦁🦁
