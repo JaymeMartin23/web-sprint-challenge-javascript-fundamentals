@@ -147,20 +147,9 @@ function lowerCaseNames(animals){
     
     💡 NOTE: The tests for 'consume' will pass if it is created correctly and also after you correctly complete the functions 'add' and 'greeting' below in Step 2.
   */
-const consume = (a, b, cb) => {
-     
-        return cb(a, b);
-    };
-
-    const add = (a, b) => a + b;
-    const greeting = (name) => `Hello, ${name}!`;
-
-    const result1 = consume(2, 3, add);
-    const result2 = consume("Alice", greeting);
-
-console.log(result1); 
-console.log(result2); 
-
+function consume () { 
+ 
+    }
  
   
   // 🦁🦁🦁 Step 2: Create several functions to callback with consume(); 🦁🦁🦁
@@ -169,20 +158,24 @@ console.log(result2);
  1. Receive two numbers as an argument that are passed in from its first and second parameters
  2. Return the sum of those numbers
  */
+ function add () {
 
-function add(/*Your Code Here */){
-    /*Your Code Here*/
-  }
 
+ }
+ 
 
 /* Use multiply to do the following:
 1. Receive two numbers as an argument that are passed in from its first and second parameters
 2. Return the product of those numbers
 */
 
-function multiply(/*Your Code Here */){
-   /*Your Code Here */
-  }
+// function multiply(/*Your Code Here */){
+//    /*Your Code Here */
+//   }
+  const multiply = (a, b) => {
+    // Return the product of the two numbers
+    return a * b;
+  };
 
 
  /* Use greeting to do the following:
