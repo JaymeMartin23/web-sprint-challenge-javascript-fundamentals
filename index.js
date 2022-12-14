@@ -203,6 +203,8 @@ console.log(consume("Mary", "Poppins", greeting));
 
 // 🐴🐴🐴 Topic 3: Prototypes 🐴🐴🐴 //
 
+
+
 //🐴🐴🐴 Task: You are to build a cuboid maker that can return values for a cuboid's volume or surface area. Cuboids are similar to cubes but do not have even sides. Follow the steps in order to accomplish this challenge. 🐴🐴🐴
 
 /* 🐴🐴🐴 Step 1: Base Constructor 🐴🐴🐴
@@ -274,11 +276,6 @@ console.log(`Height: ${cuboidTwo.height}`);
 // console.log(cuboidTwo.volume()); // 100
 // console.log(cuboidTwo.surfaceArea()); // 130
 
-
-
-
-
-  
 
 
   /* 🛑🛑🛑🛑🛑 Please do not modify anything below this line 🛑🛑🛑🛑🛑 */
