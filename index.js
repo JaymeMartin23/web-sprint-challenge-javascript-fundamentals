@@ -181,7 +181,7 @@ function lowerCaseNames(animals){
   };
   // const result = consume(2, 3, multiply);
   
-  // console.log(result);
+  console.log(multiply(2, 4));
 
 
  /* Use greeting to do the following:
