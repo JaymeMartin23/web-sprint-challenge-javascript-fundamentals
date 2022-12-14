@@ -151,9 +151,6 @@ function lowerCaseNames(animals){
       return callback(param1, param2)
     }
 
-
-   
- 
   
   // 🦁🦁🦁 Step 2: Create several functions to callback with consume(); 🦁🦁🦁
 
@@ -259,13 +256,26 @@ console.log(cuboid.surfaceArea())
 // 🦄🦄🦄 Topic 4: Classes 🦄🦄🦄 //
 //Using CuboidMakerTwo, take your prototypes from above and refactor into class syntax. Then, create an object called cuboidTwo that uses the new keyword to use our CuboidMakerTwo class.
 class CuboidMakerTwo {
-  constructor(length, width, height) {
-    this.length = length;
-    this.width = width;
-    this.height = height;
+  constructor(attributes) {
+    this.length = attributes.length;
+    this.width = attributes.width;
+    this.height = attributes.height;
+  }
+
+  volume() {
+    return this.length * this.width * this.height;
+  }
+
+  surfaceArea() {
+    return 2 * (this.length * this.width + this.length * this.height + this.width * this.height);
   }
 }
-const cuboidTwo = new CuboidMakerTwo(4, 5, 5);
+
+const cuboidTwo = new CuboidMakerTwo({
+  length: 10,
+  width: 10,
+  height: 10
+});
 
 console.log(`Length: ${cuboidTwo.length}`);
 console.log(`Width: ${cuboidTwo.width}`);
